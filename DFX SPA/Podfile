@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+
+def conmmonPods
+
+end
+
+target 'DFX-SPA-macos' do
+  platform :osx, '13.0'
+	use_frameworks!
+
+        #pod 'Alpha', :configurations => ['DebugMac', 'ReleaseMac']
+        #pod 'Beta', :configurations => ['DebugMac', 'ReleaseMac']
+end
+
+target 'DFX-SPA-ios' do
+  platform :ios, '15.0'
+	use_frameworks!
+  
+  pod 'IQKeyboardManagerSwift'
+
+        #pod 'Alpha', :configurations => ['DebugIOS', 'ReleaseIOS']
+        #pod 'Beta', :configurations => ['DebugIOS', 'ReleaseIOS']
+end
